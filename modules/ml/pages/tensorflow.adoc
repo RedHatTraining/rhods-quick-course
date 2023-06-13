@@ -1,0 +1,13 @@
+= Lab: Deep Learning using Tensorflow and Keras
+
+== Objectives
+
+* Create neural networks for deep learning using Tensorflow and Keras
+
+== Introducing Tensorflow and Keras
+
+* Vast API. Pick any use-case. Full list here https://keras.io/examples/ 
+* TODO: Add more use-cases from design doc
+* Suggestion - simple image recognition
+** https://www.kaggle.com/learn/intro-to-deep-learning  
+** https://www.kaggle.com/learn/computer-vision 

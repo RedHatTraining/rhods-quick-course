@@ -1,0 +1,27 @@
+= Chapter 2: Data Analysis and Visualization
+
+.Abstract
+[cols="1,3"]
+|===
+|*Goal* | Explore the Python data analysis and visualization libraries
+|*Objectives* a| 
+
+* Import, manipulate, analyze and visualize data at a basic level using Jupyter Notebooks
+* Import data into a Jupyter notebook. Import the required Python libraries to clean, filter, and transform data
+
+|*Sections* a| 
+
+* Data Analysis and Visualization
+* Explore Data with Pandas (Lab)
+* Multi-dimensional data analysis with NumPy (Lab)
+* Visualizing Data with Matplotlib (Lab)
+
+|===
+
+== Objectives
+
+* Import, manipulate, analyze and visualize data at a basic level using Jupyter Notebooks
+Assessment
+* Import data into a Jupyter notebook. Import the required Python libraries to clean, filter, and transform data
+
+

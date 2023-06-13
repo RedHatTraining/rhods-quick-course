@@ -1,0 +1,19 @@
+= Serving Machine Learning models
+
+== Objectives
+
+* Serve machine learning models on OpenShift using Flask
+* Create machine learning models using real-time streaming on OpenShift
+
+== Introduction to Model Serving
+
+* Terminology for serving ML models
+* How to convert Jupyter notebook code to a Python function
+* How to clone the Flask app template from Github and deploy it to OCP using S2I
+* A nice diagram of the overall process
+* Real time data streaming with Kafka
+
+=== References
+
+* https://towardsdatascience.com/deploying-a-machine-learning-model-as-an-api-on-red-hat-openshift-container-platform-5f6553647917[Deploying a Machine Learning Model as an API]
+

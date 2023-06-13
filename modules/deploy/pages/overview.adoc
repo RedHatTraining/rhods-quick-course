@@ -1,0 +1,5 @@
+= Chapter 4: Deploying and Serving Machine Learning Models
+
+== Objectives
+
+* Deploy and serve machine learning models on OpenShift

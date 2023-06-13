@@ -1,0 +1,19 @@
+site:
+  title: Red Hat OpenShift Data Science
+  start_page: rhods-book::index.adoc
+
+content:
+  sources:
+  - url: ./
+    branches:
+    - 'main'
+    - '1.24'
+
+asciidoc:
+  attributes:
+    page-pagination: true
+
+ui:
+  bundle:
+    url: ./ui-bundle/ui-bundle.zip
+  supplemental_files: ./supplemental-ui

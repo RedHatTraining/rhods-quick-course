@@ -1,0 +1,15 @@
+= Lab: Streaming Data with RedHat OpenShift Streams for Kafka
+
+== Objectives
+
+* Create machine learning models using real-time streaming on OpenShift
+
+== Steps
+
+* Provide a readily available and installed Kafka streams cluster in the classroom
+* Create a kafka instance
+* Create a topic
+* Create and provide access to service account for Kafka
+* Configure Jupyter notebook for Kafka using env vars
+* Show how to consume Kafka messages from a real time input stream
+* Do some processing of real time data and publish results

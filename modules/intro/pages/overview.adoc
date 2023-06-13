@@ -1,0 +1,7 @@
+= Chapter 1: Introduction
+
+This chapter provides an overview of the RedHat OpenShift Data Science (RHODS) product and its architecture.
+
+== Objectives
+
+* Identify the main components of Red Hat OpenShift Data Science and interactively execute code using Jupyter Notebooks

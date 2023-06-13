@@ -1,0 +1,18 @@
+= Introduction to RedHat OpenShift Data Science
+
+== Objective
+
+* Become familiar with the general architecture and main features of Red Hat OpenShift Data Science
+
+== The RedHat OpenShift Data Science Platform
+
+* Introduction to RHODS - what problem it solves (conceptual overview)
+* What the student can expect to accomplish by the end of the course
+* We want to try something new - record a full end to end demo of using RHODS for a specific business case. For example - data analysis, visualization and a simple machine learning and serving use case. We want to hook the student in. They are not expected to understand all the details. It’s just “look at all the cool things you can do. You will be able to do this at the end of this course”. Provide a fully runnable, complete Jupyter Notebook.
+* Embed the demo video in the lecture section. No need for a separate section.
+
+video::Y12T8G1LpyY[youtube,title=Demo: Introduction to RHODS,width=640,height=480]
+
+=== References
+
+* https://developers.redhat.com/learn/openshift-data-science[Red Hat Developers page for RHODS]

@@ -1,0 +1,12 @@
+= Lab: Serving Machine Learning models using Flask
+
+== Objectives
+
+* Expose your machine learning models to client applications using the Flask API
+
+== Steps
+
+* Create a Python S2I application for RHODS from a GitHub template
+* Save your model as an independent Python prediction function
+* Test the deployed application endpoint for your prediction function
+* RTODO: Add references to use-cases

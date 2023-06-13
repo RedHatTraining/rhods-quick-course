@@ -1,7 +1,0 @@
-= Chapter 3: Machine Learning
-
-This chapter is about the various ML libraries in the Python ecosystem.
-
-== Objectives
-
-* Create and test machine learning models

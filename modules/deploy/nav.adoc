@@ -1,4 +1,0 @@
-* xref:overview.adoc[]
-** xref:serving.adoc[]
-** xref:flask.adoc[]
-** xref:kafka.adoc[]

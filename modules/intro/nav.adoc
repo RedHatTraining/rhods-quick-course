@@ -1,4 +1,0 @@
-* xref:overview.adoc[]
-** xref:intro.adoc[]
-** xref:jupyter.adoc[]
-** xref:jupyter-lab.adoc[]

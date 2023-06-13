@@ -1,5 +1,0 @@
-* xref:overview.adoc[]
-** xref:ml.adoc[]
-** xref:predictive.adoc[]
-** xref:tensorflow.adoc[]
-** xref:pytorch.adoc[]

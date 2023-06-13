@@ -15,7 +15,7 @@ starterProjects:
   - name: rhods-quick-course
     git:
       remotes:
-        origin: 'https://github.com/rsriniva/rhods-quick-course.git'
+        origin: 'https://github.com/RedHatTraining/rhods-quick-course.git'
 components:
   - name: runtime
     container:

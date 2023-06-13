@@ -1,6 +1,6 @@
 name: rhods-book
 title: Red Hat OpenShift Data Science
-version: 1.25
+version: main
 nav:
 - modules/ROOT/nav.adoc
 - modules/classroom/nav.adoc

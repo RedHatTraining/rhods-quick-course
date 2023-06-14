@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Lab: Predictive Data Analysis using Scikit-Learn :: Red Hat OpenShift Data Science</title>
-    <link rel="prev" href="ml.html">
-    <link rel="next" href="tensorflow.html">
+    <title>Lab: Serving Machine Learning models using Flask :: Red Hat OpenShift Data Science</title>
+    <link rel="prev" href="serving.html">
+    <link rel="next" href="kafka.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -30,7 +30,7 @@
     </div>
   </nav>
 </header><div class="body">
-<div class="nav-container" data-component="rhods-book" data-version="main">
+<div class="nav-container" data-component="rhods-book" data-version="1.25">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -96,19 +96,19 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="overview.html">Chapter 3: Machine Learning</a>
+    <a class="nav-link" href="../ml/overview.html">Chapter 3: Machine Learning</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ml.html">Machine Learning and Deep Learning</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="predictive.html">Lab: Predictive Data Analysis using Scikit-Learn</a>
+    <a class="nav-link" href="../ml/ml.html">Machine Learning and Deep Learning</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="tensorflow.html">Lab: Deep Learning using Tensorflow and Keras</a>
+    <a class="nav-link" href="../ml/predictive.html">Lab: Predictive Data Analysis using Scikit-Learn</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="pytorch.html">Lab: Deep Learning using PyTorch</a>
+    <a class="nav-link" href="../ml/tensorflow.html">Lab: Deep Learning using Tensorflow and Keras</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ml/pytorch.html">Lab: Deep Learning using PyTorch</a>
   </li>
 </ul>
   </li>
@@ -118,16 +118,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../deploy/overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
+    <a class="nav-link" href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/serving.html">Serving Machine Learning models</a>
+    <a class="nav-link" href="serving.html">Serving Machine Learning models</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="flask.html">Lab: Serving Machine Learning models using Flask</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/flask.html">Lab: Serving Machine Learning models using Flask</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
+    <a class="nav-link" href="kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
   </li>
 </ul>
   </li>
@@ -139,14 +139,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Red Hat OpenShift Data Science</span>
-    <span class="version">main</span>
+    <span class="version">1.25</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="../index.html">Red Hat OpenShift Data Science</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+          <a href="../index.html">1.25</a>
         </li>
       </ul>
     </li>
@@ -162,8 +162,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Red Hat OpenShift Data Science</a></li>
-    <li><a href="overview.html">Chapter 3: Machine Learning</a></li>
-    <li><a href="predictive.html">Lab: Predictive Data Analysis using Scikit-Learn</a></li>
+    <li><a href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a></li>
+    <li><a href="flask.html">Lab: Serving Machine Learning models using Flask</a></li>
   </ul>
 </nav>
 </div>
@@ -172,37 +172,43 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Lab: Predictive Data Analysis using Scikit-Learn</h1>
+<h1 class="page">Lab: Serving Machine Learning models using Flask</h1>
 <div class="sect1">
 <h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Create predictive machine learning models using Scikit-Learn</p>
+<p>Expose your machine learning models to client applications using the Flask API</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introducing_scikit_learn"><a class="anchor" href="#_introducing_scikit_learn"></a>Introducing Scikit-Learn</h2>
+<h2 id="_steps"><a class="anchor" href="#_steps"></a>Steps</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Image and Object classification - <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html#sphx-glr-auto-examples-classification-plot-digits-classification-py" class="bare">https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html#sphx-glr-auto-examples-classification-plot-digits-classification-py</a></p>
+<p>Create a Python S2I application for RHODS from a GitHub template</p>
 </li>
 <li>
-<p>TODO: Add more use-cases from Red Hat internal resources</p>
+<p>Save your model as an independent Python prediction function</p>
+</li>
+<li>
+<p>Test the deployed application endpoint for your prediction function</p>
+</li>
+<li>
+<p>RTODO: Add references to use-cases</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="ml.html">Machine Learning and Deep Learning</a></span>
-  <span class="next"><a href="tensorflow.html">Lab: Deep Learning using Tensorflow and Keras</a></span>
+  <span class="prev"><a href="serving.html">Serving Machine Learning models</a></span>
+  <span class="next"><a href="kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a></span>
 </nav>
 </article>
   </div>

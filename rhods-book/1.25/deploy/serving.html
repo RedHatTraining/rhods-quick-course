@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Classroom Environment :: Red Hat OpenShift Data Science</title>
-    <link rel="prev" href="../index.html">
-    <link rel="next" href="../intro/overview.html">
+    <title>Serving Machine Learning models :: Red Hat OpenShift Data Science</title>
+    <link rel="prev" href="overview.html">
+    <link rel="next" href="flask.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -30,7 +30,7 @@
     </div>
   </nav>
 </header><div class="body">
-<div class="nav-container" data-component="rhods-book" data-version="main">
+<div class="nav-container" data-component="rhods-book" data-version="1.25">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -46,8 +46,8 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="classroom.html">Classroom Environment</a>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../classroom/classroom.html">Classroom Environment</a>
   </li>
 </ul>
   </li>
@@ -118,16 +118,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../deploy/overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
+    <a class="nav-link" href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/serving.html">Serving Machine Learning models</a>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="serving.html">Serving Machine Learning models</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/flask.html">Lab: Serving Machine Learning models using Flask</a>
+    <a class="nav-link" href="flask.html">Lab: Serving Machine Learning models using Flask</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
+    <a class="nav-link" href="kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
   </li>
 </ul>
   </li>
@@ -139,14 +139,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Red Hat OpenShift Data Science</span>
-    <span class="version">main</span>
+    <span class="version">1.25</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="../index.html">Red Hat OpenShift Data Science</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+          <a href="../index.html">1.25</a>
         </li>
       </ul>
     </li>
@@ -162,7 +162,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Red Hat OpenShift Data Science</a></li>
-    <li><a href="classroom.html">Classroom Environment</a></li>
+    <li><a href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a></li>
+    <li><a href="serving.html">Serving Machine Learning models</a></li>
   </ul>
 </nav>
 </div>
@@ -171,47 +172,59 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Classroom Environment</h1>
-<div id="preamble">
+<h1 class="page">Serving Machine Learning models</h1>
+<div class="sect1">
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>This course will use a fully managed cloud services instance of RHODS. Each student will get an account for a RHODS instance.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/rhods-classroom.svg" alt="rhods classroom">
-</div>
-<div class="title">Figure 1. Classroom environment</div>
-</div>
-<div class="paragraph">
-<p>We will also use other cloud services in this course including:</p>
-</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Red Hat OpenShift Container Platform/OSD/ROSA?</p>
+<p>Serve machine learning models on OpenShift using Flask</p>
 </li>
 <li>
-<p>Red Hat AMQ Streams</p>
+<p>Create machine learning models using real-time streaming on OpenShift</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_accessing_the_rhods_instance"><a class="anchor" href="#_accessing_the_rhods_instance"></a>Accessing the RHODS Instance</h2>
+<h2 id="_introduction_to_model_serving"><a class="anchor" href="#_introduction_to_model_serving"></a>Introduction to Model Serving</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Instructions to access RHPDS/ROL/ROSA/OSD Whatever go here&#8230;&#8203;</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Terminology for serving ML models</p>
+</li>
+<li>
+<p>How to convert Jupyter notebook code to a Python function</p>
+</li>
+<li>
+<p>How to clone the Flask app template from Github and deploy it to OCP using S2I</p>
+</li>
+<li>
+<p>A nice diagram of the overall process</p>
+</li>
+<li>
+<p>Real time data streaming with Kafka</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>A development and testing sandbox for internal associates is available at  <a href="https://red.ht/rhods-internal" class="bare">https://red.ht/rhods-internal</a></p>
+<div class="sect2">
+<h3 id="_references"><a class="anchor" href="#_references"></a>References</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://towardsdatascience.com/deploying-a-machine-learning-model-as-an-api-on-red-hat-openshift-container-platform-5f6553647917">Deploying a Machine Learning Model as an API</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../index.html">Welcome</a></span>
-  <span class="next"><a href="../intro/overview.html">Chapter 1: Introduction</a></span>
+  <span class="prev"><a href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a></span>
+  <span class="next"><a href="flask.html">Lab: Serving Machine Learning models using Flask</a></span>
 </nav>
 </article>
   </div>

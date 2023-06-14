@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Introduction to RedHat OpenShift Data Science :: Red Hat OpenShift Data Science</title>
-    <link rel="prev" href="overview.html">
-    <link rel="next" href="jupyter.html">
+    <title>Chapter 4: Deploying and Serving Machine Learning Models :: Red Hat OpenShift Data Science</title>
+    <link rel="prev" href="../ml/pytorch.html">
+    <link rel="next" href="serving.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -30,7 +30,7 @@
     </div>
   </nav>
 </header><div class="body">
-<div class="nav-container" data-component="rhods-book" data-version="main">
+<div class="nav-container" data-component="rhods-book" data-version="1.25">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -55,16 +55,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="overview.html">Chapter 1: Introduction</a>
+    <a class="nav-link" href="../intro/overview.html">Chapter 1: Introduction</a>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="intro.html">Introduction to RedHat OpenShift Data Science</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../intro/intro.html">Introduction to RedHat OpenShift Data Science</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="jupyter.html">Jupyter Notebooks</a>
+    <a class="nav-link" href="../intro/jupyter.html">Jupyter Notebooks</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="jupyter-lab.html">Lab: Jupyter Notebooks</a>
+    <a class="nav-link" href="../intro/jupyter-lab.html">Lab: Jupyter Notebooks</a>
   </li>
 </ul>
   </li>
@@ -116,18 +116,18 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../deploy/overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
+    <a class="nav-link" href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/serving.html">Serving Machine Learning models</a>
+    <a class="nav-link" href="serving.html">Serving Machine Learning models</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/flask.html">Lab: Serving Machine Learning models using Flask</a>
+    <a class="nav-link" href="flask.html">Lab: Serving Machine Learning models using Flask</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../deploy/kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
+    <a class="nav-link" href="kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
   </li>
 </ul>
   </li>
@@ -139,14 +139,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Red Hat OpenShift Data Science</span>
-    <span class="version">main</span>
+    <span class="version">1.25</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="../index.html">Red Hat OpenShift Data Science</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+          <a href="../index.html">1.25</a>
         </li>
       </ul>
     </li>
@@ -162,8 +162,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Red Hat OpenShift Data Science</a></li>
-    <li><a href="overview.html">Chapter 1: Introduction</a></li>
-    <li><a href="intro.html">Introduction to RedHat OpenShift Data Science</a></li>
+    <li><a href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a></li>
   </ul>
 </nav>
 </div>
@@ -172,59 +171,22 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Introduction to RedHat OpenShift Data Science</h1>
+<h1 class="page">Chapter 4: Deploying and Serving Machine Learning Models</h1>
 <div class="sect1">
-<h2 id="_objective"><a class="anchor" href="#_objective"></a>Objective</h2>
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Become familiar with the general architecture and main features of Red Hat OpenShift Data Science</p>
+<p>Deploy and serve machine learning models on OpenShift</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_the_redhat_openshift_data_science_platform"><a class="anchor" href="#_the_redhat_openshift_data_science_platform"></a>The RedHat OpenShift Data Science Platform</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Introduction to RHODS - what problem it solves (conceptual overview)</p>
-</li>
-<li>
-<p>What the student can expect to accomplish by the end of the course</p>
-</li>
-<li>
-<p>We want to try something new - record a full end to end demo of using RHODS for a specific business case. For example - data analysis, visualization and a simple machine learning and serving use case. We want to hook the student in. They are not expected to understand all the details. It’s just “look at all the cool things you can do. You will be able to do this at the end of this course”. Provide a fully runnable, complete Jupyter Notebook.</p>
-</li>
-<li>
-<p>Embed the demo video in the lecture section. No need for a separate section.</p>
-</li>
-</ul>
-</div>
-<div class="videoblock">
-<div class="title">Demo: Introduction to RHODS</div>
-<div class="content">
-<iframe width="640" height="480" src="https://www.youtube.com/embed/Y12T8G1LpyY?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_references"><a class="anchor" href="#_references"></a>References</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://developers.redhat.com/learn/openshift-data-science">Red Hat Developers page for RHODS</a></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="overview.html">Chapter 1: Introduction</a></span>
-  <span class="next"><a href="jupyter.html">Jupyter Notebooks</a></span>
+  <span class="prev"><a href="../ml/pytorch.html">Lab: Deep Learning using PyTorch</a></span>
+  <span class="next"><a href="serving.html">Serving Machine Learning models</a></span>
 </nav>
 </article>
   </div>

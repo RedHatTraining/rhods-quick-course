@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Lab: Deep Learning using Tensorflow and Keras :: Red Hat OpenShift Data Science</title>
-    <link rel="prev" href="predictive.html">
-    <link rel="next" href="pytorch.html">
+    <title>Jupyter Notebooks :: Red Hat OpenShift Data Science</title>
+    <link rel="prev" href="intro.html">
+    <link rel="next" href="jupyter-lab.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -30,7 +30,7 @@
     </div>
   </nav>
 </header><div class="body">
-<div class="nav-container" data-component="rhods-book" data-version="main">
+<div class="nav-container" data-component="rhods-book" data-version="1.25">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -55,16 +55,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../intro/overview.html">Chapter 1: Introduction</a>
+    <a class="nav-link" href="overview.html">Chapter 1: Introduction</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../intro/intro.html">Introduction to RedHat OpenShift Data Science</a>
+    <a class="nav-link" href="intro.html">Introduction to RedHat OpenShift Data Science</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="jupyter.html">Jupyter Notebooks</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../intro/jupyter.html">Jupyter Notebooks</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../intro/jupyter-lab.html">Lab: Jupyter Notebooks</a>
+    <a class="nav-link" href="jupyter-lab.html">Lab: Jupyter Notebooks</a>
   </li>
 </ul>
   </li>
@@ -96,19 +96,19 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="overview.html">Chapter 3: Machine Learning</a>
+    <a class="nav-link" href="../ml/overview.html">Chapter 3: Machine Learning</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ml.html">Machine Learning and Deep Learning</a>
+    <a class="nav-link" href="../ml/ml.html">Machine Learning and Deep Learning</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="predictive.html">Lab: Predictive Data Analysis using Scikit-Learn</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="tensorflow.html">Lab: Deep Learning using Tensorflow and Keras</a>
+    <a class="nav-link" href="../ml/predictive.html">Lab: Predictive Data Analysis using Scikit-Learn</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="pytorch.html">Lab: Deep Learning using PyTorch</a>
+    <a class="nav-link" href="../ml/tensorflow.html">Lab: Deep Learning using Tensorflow and Keras</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ml/pytorch.html">Lab: Deep Learning using PyTorch</a>
   </li>
 </ul>
   </li>
@@ -139,14 +139,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Red Hat OpenShift Data Science</span>
-    <span class="version">main</span>
+    <span class="version">1.25</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="../index.html">Red Hat OpenShift Data Science</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+          <a href="../index.html">1.25</a>
         </li>
       </ul>
     </li>
@@ -162,8 +162,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Red Hat OpenShift Data Science</a></li>
-    <li><a href="overview.html">Chapter 3: Machine Learning</a></li>
-    <li><a href="tensorflow.html">Lab: Deep Learning using Tensorflow and Keras</a></li>
+    <li><a href="overview.html">Chapter 1: Introduction</a></li>
+    <li><a href="jupyter.html">Jupyter Notebooks</a></li>
   </ul>
 </nav>
 </div>
@@ -172,50 +172,46 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Lab: Deep Learning using Tensorflow and Keras</h1>
+<h1 class="page">Jupyter Notebooks</h1>
 <div class="sect1">
-<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
+<h2 id="_objective"><a class="anchor" href="#_objective"></a>Objective</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Create neural networks for deep learning using Tensorflow and Keras</p>
+<p>Create, import, execute and share notebooks using a Git repository</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introducing_tensorflow_and_keras"><a class="anchor" href="#_introducing_tensorflow_and_keras"></a>Introducing Tensorflow and Keras</h2>
+<h2 id="_introducing_jupyter_notebooks"><a class="anchor" href="#_introducing_jupyter_notebooks"></a>Introducing Jupyter Notebooks</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Vast API. Pick any use-case. Full list here <a href="https://keras.io/examples/" class="bare">https://keras.io/examples/</a></p>
+<p>What is a Jupyter notebook? Why is it popular?</p>
 </li>
 <li>
-<p>TODO: Add more use-cases from design doc</p>
+<p>Show how to run some simple Python code</p>
 </li>
 <li>
-<p>Suggestion - simple image recognition</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://www.kaggle.com/learn/intro-to-deep-learning" class="bare">https://www.kaggle.com/learn/intro-to-deep-learning</a></p>
+<p>Creating and sharing notebooks</p>
 </li>
 <li>
-<p><a href="https://www.kaggle.com/learn/computer-vision" class="bare">https://www.kaggle.com/learn/computer-vision</a></p>
+<p>Importing notebooks from Git</p>
 </li>
-</ul>
-</div>
+<li>
+<p>Visualizing data in notebooks using Graphs, plots and charts (basics only, we have a detailed section on visualization in the next chapter)</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="predictive.html">Lab: Predictive Data Analysis using Scikit-Learn</a></span>
-  <span class="next"><a href="pytorch.html">Lab: Deep Learning using PyTorch</a></span>
+  <span class="prev"><a href="intro.html">Introduction to RedHat OpenShift Data Science</a></span>
+  <span class="next"><a href="jupyter-lab.html">Lab: Jupyter Notebooks</a></span>
 </nav>
 </article>
   </div>

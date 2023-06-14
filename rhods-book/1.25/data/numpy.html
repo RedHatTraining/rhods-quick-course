@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Lab: Streaming Data with RedHat OpenShift Streams for Kafka :: Red Hat OpenShift Data Science</title>
-    <link rel="prev" href="flask.html">
+    <title>Lab: Multi-dimensional data analysis with NumPy :: Red Hat OpenShift Data Science</title>
+    <link rel="prev" href="pandas.html">
+    <link rel="next" href="matplotlib.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -29,7 +30,7 @@
     </div>
   </nav>
 </header><div class="body">
-<div class="nav-container" data-component="rhods-book" data-version="main">
+<div class="nav-container" data-component="rhods-book" data-version="1.25">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -73,19 +74,19 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../data/overview.html">Chapter 2: Data Analysis and Visualization</a>
+    <a class="nav-link" href="overview.html">Chapter 2: Data Analysis and Visualization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../data/data.html">Data Analysis and Visualization</a>
+    <a class="nav-link" href="data.html">Data Analysis and Visualization</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../data/pandas.html">Lab: Explore Data with Pandas</a>
+    <a class="nav-link" href="pandas.html">Lab: Explore Data with Pandas</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="numpy.html">Lab: Multi-dimensional data analysis with NumPy</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../data/numpy.html">Lab: Multi-dimensional data analysis with NumPy</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../data/matplotlib.html">Lab: Visualizing Data with Matplotlib</a>
+    <a class="nav-link" href="matplotlib.html">Lab: Visualizing Data with Matplotlib</a>
   </li>
 </ul>
   </li>
@@ -117,16 +118,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
+    <a class="nav-link" href="../deploy/overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="serving.html">Serving Machine Learning models</a>
+    <a class="nav-link" href="../deploy/serving.html">Serving Machine Learning models</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="flask.html">Lab: Serving Machine Learning models using Flask</a>
+    <a class="nav-link" href="../deploy/flask.html">Lab: Serving Machine Learning models using Flask</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deploy/kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a>
   </li>
 </ul>
   </li>
@@ -138,14 +139,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Red Hat OpenShift Data Science</span>
-    <span class="version">main</span>
+    <span class="version">1.25</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="../index.html">Red Hat OpenShift Data Science</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+          <a href="../index.html">1.25</a>
         </li>
       </ul>
     </li>
@@ -161,8 +162,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Red Hat OpenShift Data Science</a></li>
-    <li><a href="overview.html">Chapter 4: Deploying and Serving Machine Learning Models</a></li>
-    <li><a href="kafka.html">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</a></li>
+    <li><a href="overview.html">Chapter 2: Data Analysis and Visualization</a></li>
+    <li><a href="numpy.html">Lab: Multi-dimensional data analysis with NumPy</a></li>
   </ul>
 </nav>
 </div>
@@ -171,14 +172,14 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Lab: Streaming Data with RedHat OpenShift Streams for Kafka</h1>
+<h1 class="page">Lab: Multi-dimensional data analysis with NumPy</h1>
 <div class="sect1">
 <h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Create machine learning models using real-time streaming on OpenShift</p>
+<p>Use NumPy for analyzing multi-dimensional and matrix data  in Jupyter notebooks</p>
 </li>
 </ul>
 </div>
@@ -190,32 +191,24 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Provide a readily available and installed Kafka streams cluster in the classroom</p>
+<p><a href="https://www.kaggle.com/code/orhansertkaya/numpy-tutorial-for-beginners" class="bare">https://www.kaggle.com/code/orhansertkaya/numpy-tutorial-for-beginners</a></p>
 </li>
 <li>
-<p>Create a kafka instance</p>
+<p>Use Case - <a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud" class="bare">https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud</a></p>
 </li>
 <li>
-<p>Create a topic</p>
+<p>Focus on “Business” use-cases and concepts rather than pure science/pure math use-cases. The social sciences are OK because the data sets and analysis is easy to understand.</p>
 </li>
 <li>
-<p>Create and provide access to service account for Kafka</p>
-</li>
-<li>
-<p>Configure Jupyter notebook for Kafka using env vars</p>
-</li>
-<li>
-<p>Show how to consume Kafka messages from a real time input stream</p>
-</li>
-<li>
-<p>Do some processing of real time data and publish results</p>
+<p>Avoid too “mathy” use-cases in physics or chemistry that would require prerequisite knowledge.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="flask.html">Lab: Serving Machine Learning models using Flask</a></span>
+  <span class="prev"><a href="pandas.html">Lab: Explore Data with Pandas</a></span>
+  <span class="next"><a href="matplotlib.html">Lab: Visualizing Data with Matplotlib</a></span>
 </nav>
 </article>
   </div>

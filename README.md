@@ -13,11 +13,13 @@ To contribute, you can use locally installed tooling on your workstation, or you
 
 ## The "Easy Button" aka OpenShift DevSpaces
 
-1. To open and edit the asciidoc files in OpenShift DevSpaces, click <a href="https://devspaces.apps.cluster-bqmpk.bqmpk.sandbox1618.opentlc.com/#https://github.com/RedHatTraining/rhods-quick-course" target="_blank">here</a>, and log in using your provided OpenShift credentials:
+1. To open and edit the asciidoc files in OpenShift DevSpaces, right click on the **Developer Workspace** badge below and open it in a new browser tab:
 
-2. If you launch the DevSpaces workspace for the first time, it will take a few minutes to download the container image, clone the Git repository, and set up your project. All the required tooling and IDE plugins are automatically installed and set up for you.
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.cluster-bqmpk.bqmpk.sandbox1618.opentlc.com/#https://github.com/RedHatTraining/rhods-quick-course)
 
-3. Follow the steps in the *Previewing HTML content and publishing* section. All the directory paths are relative to the root location where the repository is cloned.
+3. Log in using your provided OpenShift credentials. If you launch the DevSpaces workspace for the first time, it will take a few minutes to download the container image, clone the Git repository, and set up your project. All the required tooling and IDE plugins are automatically installed and set up for you.
+
+4. Follow the steps in the *Previewing HTML content and publishing* section. All the directory paths are relative to the root location where the repository is cloned.
 
 ## Previewing HTML content and publishing
 

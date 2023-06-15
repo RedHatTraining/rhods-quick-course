@@ -67,4 +67,4 @@ $ npm install
 9. After a few minutes, the GitHub action finishes and you can view the latest rendered asciidoc content at https://rsriniva.github.io/rhods-quick-course.
 
 ## Problems and Feedback
-If you run into any issues, report bugs/suggestions/improvements about this course here - https://github.com/rsriniva/rhods-quick-course/issues
+If you run into any issues, report bugs/suggestions/improvements about this course here - https://github.com/RedHatTraining/rhods-quick-course/issues

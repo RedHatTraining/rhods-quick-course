@@ -1,15 +1,8 @@
 # Red Hat OpenShift Data Science Quick Course
 
-Welcome to the OpenShift Data Science quick course!. This course uses standard asciidoc for content authoring that is then rendered to HTML and hosted by GitHub Pages. It uses the Antora publishing platform (https://antora.org) to transform the asciidoc conent to HTML.
+Welcome to the OpenShift Data Science quick course! This course uses standard asciidoc for content authoring that is then rendered to HTML and hosted by GitHub Pages. It uses the Antora publishing platform (https://antora.org) to transform the asciidoc conent to HTML.
 
 To contribute, you can use locally installed tooling on your workstation, or you can use OpenShift DevSpaces to work with content using a web based IDE without the need to install anything.
-
-## Locally installed Tooling
-
-1. Install an LTS version of the Node.js runtime on your workstation.
-2. Clone this Git repository to a folder of your choice. For the following steps in this README, this folder is indicated by *$CONTENT_ROOT*.
-3. Install an editor of your choice. We recommend Visual Studio Code with the *asciidoctor* plug-in.
-4. Follow the steps in the *Previewing HTML content and publishing* section.
 
 ## The "Easy Button" aka OpenShift DevSpaces
 
@@ -19,7 +12,14 @@ To contribute, you can use locally installed tooling on your workstation, or you
 
 2. If you launch the DevSpaces workspace for the first time, it will take a few minutes to download the container image, clone the Git repository, and set up your project. All the required tooling and IDE plugins are automatically installed and set up for you.
 
-3. Follow the steps in the *Previewing HTML content and publishing* section.
+3. Follow the steps in the [*Previewing HTML content and publishing*](#Previewing-HTML-content-and-publishing) section.
+
+## Locally installed Tooling
+
+1. Install an LTS version of the Node.js runtime on your workstation.
+2. Clone this Git repository to a folder of your choice. For the following steps in this README, this folder is indicated by *$CONTENT_ROOT*.
+3. Install an editor of your choice. We recommend Visual Studio Code with the *asciidoctor* plug-in.
+4. Follow the steps in the [*Previewing HTML content and publishing*](#Previewing-HTML-content-and-publishing) section.
 
 ## Previewing HTML content and publishing
 

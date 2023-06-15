@@ -23,7 +23,7 @@ To contribute, you can use locally installed tooling on your workstation, or you
 
 ## Previewing HTML content and publishing
 
-1. All commands in the following steps are to be run from the *$CONTENT_ROOT* folder. Navigate to this folder from the VSCode terminal (Press **Ctrl + `**):
+1. All commands in the following steps are to be run from the *$CONTENT_ROOT* folder. Navigate to this folder from the VSCode terminal (Press **"Ctrl + \`"** on Linux; Press **"Ctrl + Shift + `"** on MacOS):
 
 ```bash
 $ cd $CONTENT_ROOT
@@ -35,13 +35,13 @@ $ cd $CONTENT_ROOT
 $ npm install
 ```
 
-3. The Git repository contains the default chapter and section stubs with comments from the product owner/architect to help guide you. Inspect the *$CONTENT_ROOT/antora.yml* file, which defines the top level modules (chapters) in this course. 
+3. The Git repository contains the default chapter and section stubs with comments from the course product owner and architect to help guide you. Inspect the *$CONTENT_ROOT/antora.yml* file, which defines the top level modules (chapters) in this course. 
 
 4. The starting point (index page) for the course is rendered from asciidoc content in the *$CONTENT_ROOT/modules/ROOT/pages/index.adoc* file.
 
 5. Each top level module has a separate asciidoc file (*nav.adoc*) located in *$CONTENT_ROOT/modules/module_name/* folder. The *nav.adoc* lists the sections that make up the chapter/module.
 
-6. Edit the asciidoc files under *$CONTENT_ROOT/modules/module_name/pages* folder for writing lectures and hands-on lab content as per the outline provided by the course architect/peoduct owner. You can use the *asciidoctor* plug-in preview plugin (Press *"Ctrl + Shift + V"* in VSCode) to preview the rendered HTML content.
+6. To write narrative and hands-on lab content, edit the asciidoc files under *$CONTENT_ROOT/modules/module_name/pages*. You can use the *asciidoctor* plug-in preview plugin (Press **"Ctrl + Shift + V"** on Linux; Press **"Cmd + Shift + V"** on MacOS) to preview the rendered HTML content.
 
 7. To preview the rendered website as it would look for end-users consuming this content, do the following:
 
@@ -60,8 +60,11 @@ $ npm install
 
     * Keep making changes in your asciidoc source files. The **npm watch** command will automatically detect your changes and re-generate the HTML content. Refresh your web browser to view the updated content
 
-8. Once you are satisfied with how the HTML content is rendered locally in your workspace, you can commit your changes and do a **git push** to push your content to the **main** branch of the course Git repository. An automated GitHub action runs on every push to the **main** branch and updates the HTML content in GitHub Pages.
+8. Once you are satisfied with how the HTML content is rendered locally in your workspace, you can commit your changes and do a **git push** to your branch.
+
+9. Open a Pull Request so that the changes in your branch can be merged into the **main** branch of the course Git repository. A GitHub action runs on every merge & push to the **main** branch and publishes the HTML content to a GitHub Page.
 
 9. After a few minutes, the GitHub action finishes and you can view the latest rendered asciidoc content at https://rsriniva.github.io/rhods-quick-course.
 
+## Problems and Feedback
 10. If you run into any issues, report bugs/suggestions/improvements about this course here - https://github.com/rsriniva/rhods-quick-course/issues

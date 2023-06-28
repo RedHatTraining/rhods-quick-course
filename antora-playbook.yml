@@ -5,12 +5,13 @@ site:
 content:
   sources:
   - url: ./
-    branches:
-    - 'main'
+    # branches:
+    # - 'main'
 
 asciidoc:
   attributes:
     page-pagination: true
+    experimental: true
 
 ui:
   bundle:

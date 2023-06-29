@@ -1,21 +1,22 @@
-= Developing Intelligent Applications using Red Hat OpenShift Data Science (RHODS)
+= Developing AI-enabled Applications with Red{nbsp}Hat OpenShift Data Science
 :navtitle: Welcome
 
-== Introduction
-
-IMPORTANT: This is not an official Red Hat Training course. Please contact your Red Hat sales representative if you want more information about Training or Guidelines about this product. You can view the list of training courses and certifications at [https://www.redhat.com/en/services/training-and-certification].
+IMPORTANT: This is not an official Red{nbsp}Hat Training course. Please contact your Red{nbsp}Hat sales representative if you want more information about Training or Guidelines about this product. You can view the list of training courses and certifications at [https://www.redhat.com/en/services/training-and-certification].
 
 NOTE: This course is under development.
 
-Welcome to the Red Hat Training quick course on building intelligent applications using Red Hat OpenShift Data Science (RHODS).
+Welcome to the Red{nbsp}Hat Training quick course on building AI-enabled applications with Red{nbsp}Hat OpenShift Data Science (RHODS).
 
 Use the links in the sidebar panel to navigate this course.
 
-Companies collecting and storing vast amounts of information from multiple sources need an easy way to analyze this data, visualize trends and patterns, and experiment with predicting future business outcomes using machine learning and artificial intelligence algorithms. 
+== Introduction
 
-This course addresses the customer need for an introduction to using Red Hat OpenShift Data Science (RHODS) that includes basic concepts and tools. As a result of taking this course, learners will be able to perform data analysis, create  learning models, and deploy them for consumption by applications.
+Companies collecting and storing vast amounts of information from multiple sources need an easy way to analyze this data, visualize trends and patterns, and experiment with predicting future business outcomes using machine learning and artificial intelligence algorithms.
 
-This course is based on Red Hat® OpenShift® Container Platform 4.12 and Red Hat® OpenShift® Data Science 1.25.
+This course addresses the customer need for an introduction to using RHODS, including basic concepts and tools.
+After taking this course, learners should be able to perform data analysis, create learning models, and deploy them for consumption by applications.
+
+This course is based on Red{nbsp}Hat® OpenShift® Container Platform {ocp-version} and Red{nbsp}Hat® OpenShift® Data Science {rhods-major-version}.
 
 == Course Objectives
 
@@ -30,7 +31,7 @@ At a foundational level:
 == Audience
 
 * Data scientists interested in using RHODS to perform data analysis, visualization, training data sets, and serving machine learning models for consumption by applications.
-* Developera who want to learn about integrating applications with RHODS to provide data analysis, data visualization, machine learning and predictive capabilities.
+* Developers who want to learn about integrating applications with RHODS to provide data analysis, data visualization, machine learning and predictive capabilities.
 
 ==  Prerequisites
 

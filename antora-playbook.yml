@@ -9,6 +9,8 @@ content:
 asciidoc:
   attributes:
     page-pagination: true
+    rhods-major-version: 1.28
+    ocp-version: 4.12
 
 ui:
   bundle:

@@ -2,6 +2,8 @@
 
 include::ROOT:partial$under-development.adoc[]
 
+video::Y12T8G1LpyY[youtube,title=Demo: Introduction to RHODS,width=640,height=480]
+
 // ==== Product Owner Notes ====
 // * Introduction to RHODS - what problem it solves (conceptual overview)
 // * What the student can expect to accomplish by the end of the course
@@ -17,7 +19,7 @@ include::ROOT:partial$under-development.adoc[]
 
 Data scientists commonly struggle to effectively deliver their artificial intelligence (AI) models to customers.
 As a data scientist, in some cases, you might lack the software engineering ability to create a serving layer that exposes the model.
-You might also strangle with the operational part, by administering the infrastructe required to train and serve a model.
+You might also struggle with the operational part, by administering the infrastructe required to train and serve a model.
 
 As any other piece of software, AI-based applications follow a lifecycle.
 If you do not have access to a consistent platform that allows you to move through this lifecycle, then your ability to deliver AI solutions can be seriously impacted.
@@ -31,7 +33,6 @@ As well as classic software engineering phases, such as deployment, or monitorin
 
 == Red{nbsp}Hat OpenShift Data Science
 
-video::Y12T8G1LpyY[youtube,title=Demo: Introduction to RHODS,width=640,height=480]
 
 Red{nbsp}Hat OpenShift Data Science (RHODS) is a platform that enables enterpises to train, build, deploy, and monitor AI-enabled applications.
 RHODS is the central piece of Red{nbsp}Hat OpenShift AI, a portfolio of products to cover the complete life cycle of AI applications, models, and workloads.
@@ -62,7 +63,7 @@ RHODS incorporates the following elements:
 * A UI console, integrated on OpenShift.
 
 
-// TODO: diagram
+image::rhods-arch.png[title="RHODS components"]
 
 === References
 

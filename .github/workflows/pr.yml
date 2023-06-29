@@ -1,4 +1,4 @@
-name: Publish PR previews to GitHub Pages
+name: Publish PR preview to GitHub Pages
 
 on:
   pull_request:

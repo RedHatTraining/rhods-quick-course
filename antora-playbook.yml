@@ -5,8 +5,6 @@ site:
 content:
   sources:
   - url: ./
-    branches:
-    - 'main'
 
 asciidoc:
   attributes:

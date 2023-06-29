@@ -17,20 +17,24 @@ jobs:
       statuses: write
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Install Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16'
-    - name: Install Antora
-      run: npm i antora
-    - name: Generate Site
-      run: npx antora --fetch antora-playbook.yml
-    - name: Publish to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: build/site
-        # Don't delete PR previews
-        clean-exclude: pr-preview/
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install Antora
+        run: npm ci
+
+      - name: Generate Site
+        run: npm run build
+
+      - name: Publish to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/site
+          # Don't delete PR previews
+          clean-exclude: pr-preview/

@@ -7,6 +7,9 @@ on:
       - reopened
       - synchronize
       - closed
+    paths-ignore:
+      - ".gitignore"
+      - "README.md"
 
 concurrency: pr-preview-${{ github.ref }}
 

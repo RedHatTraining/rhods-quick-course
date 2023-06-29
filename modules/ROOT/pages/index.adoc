@@ -5,6 +5,8 @@
 
 IMPORTANT: This is not an official Red Hat Training course. Please contact your Red Hat sales representative if you want more information about Training or Guidelines about this product. You can view the list of training courses and certifications at [https://www.redhat.com/en/services/training-and-certification].
 
+NOTE: This course is under development.
+
 Welcome to the Red Hat Training quick course on building intelligent applications using Red Hat OpenShift Data Science (RHODS).
 
 Use the links in the sidebar panel to navigate this course.

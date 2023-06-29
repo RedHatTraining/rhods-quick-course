@@ -39,10 +39,6 @@ jobs:
       - name: Publish to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
           folder: build/site
           # Don't delete PR versions
-          # nor previous stable versions
-          clean-exclude: |
-            pr-preview/
-
+          clean-exclude: pr-preview/

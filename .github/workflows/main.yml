@@ -6,9 +6,7 @@ on:
       - reopened
       - synchronize
       - closed
-    paths-ignore:
-      - ".gitignore"
-      - "README.md"
+
 jobs:
   build:
     permissions:
@@ -47,4 +45,4 @@ jobs:
           # nor previous stable versions
           clean-exclude: |
             pr-preview/
-            rhods-book/
+

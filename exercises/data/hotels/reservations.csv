@@ -1,0 +1,6 @@
+id,hotel_id,room_type,reservation_date,arrival_date,nights,adults,children
+1,1,double,2023-02-24,2023-08-22,4,1,0
+2,1,double,2023-01-21,2023-08-04,6,2,2
+3,2,double,2023-06-01,2023-06-12,7,2,1
+4,2,double,2023-04-17,2023-10-02,7,1,0
+5,2,suite,2023-03-02,2023-08-15,2,2,0

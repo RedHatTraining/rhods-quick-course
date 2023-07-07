@@ -1,3 +1,5 @@
+**This course has been moved to https://github.com/RedHatQuickCourses/rhods-quick-course.**
+
 # Red Hat OpenShift Data Science Quick Course
 
 Welcome to the OpenShift Data Science quick course!. This course uses standard asciidoc for content authoring that is then rendered to HTML and hosted by GitHub Pages. It uses the Antora publishing platform (https://antora.org) to transform the asciidoc conent to HTML.

@@ -16,3 +16,4 @@ video::Y12T8G1LpyY[youtube,title=Demo: Introduction to RHODS,width=640,height=48
 === References
 
 * https://developers.redhat.com/learn/openshift-data-science[Red Hat Developers page for RHODS]
+Nate was here.

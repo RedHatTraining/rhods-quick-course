@@ -1,4 +1,8 @@
-**This course has been moved to https://github.com/RedHatQuickCourses/rhods-quick-course.**
+# WARNING 
+
+**This repo is no longer used.** 
+
+**All new commits must be done at the new repo: https://github.com/RedHatQuickCourses/rhods-quick-course.**
 
 # Red Hat OpenShift Data Science Quick Course
 
